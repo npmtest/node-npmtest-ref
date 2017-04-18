@@ -1,1 +1,40 @@
-{     "devDependencies": {         "ref": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-ref",     "homepage": "https://github.com/npmtest/node-npmtest-ref",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-ref.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [ref (v1.3.4)](https://github.com/TooTallNate/ref#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ref.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ref) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ref.svg)](https://travis-ci.org/npmtest/node-npmtest-ref)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ref": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-ref",
+    "keywords": [
+        "coverage",
+        "test",
+        "ref"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_ref.js",
+    "name": "npmtest-ref",
+    "nameAlias": "npmtest_ref",
+    "nameOriginal": "npmtest-ref",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-ref.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
