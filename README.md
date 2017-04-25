@@ -1,6 +1,6 @@
 # npmtest-ref
 
-#### test coverage for  [ref (v1.3.4)](https://github.com/TooTallNate/ref#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ref.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ref) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ref.svg)](https://travis-ci.org/npmtest/node-npmtest-ref)
+#### basic test coverage for  [ref (v1.3.4)](https://github.com/TooTallNate/ref#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ref.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ref) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ref.svg)](https://travis-ci.org/npmtest/node-npmtest-ref)
 
 #### Turn Buffer instances into "pointers"
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ref/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ref/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ref/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ref/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ref/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ref/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ref/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ref/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ref/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ref/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ref/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ref/build/coverage.html/index.html)
 
@@ -98,7 +98,8 @@
         "install": "node-gyp rebuild",
         "test": "mocha -gc --reporter spec --use_strict"
     },
-    "version": "1.3.4"
+    "version": "1.3.4",
+    "bin": {}
 }
 ```
 
